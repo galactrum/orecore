@@ -1,5 +1,5 @@
 
 
-var bitcoreTasks = require('bitcore-build-dash');
+var orecoreTasks = require('orecore-build');
 
-bitcoreTasks();
+orecoreTasks();

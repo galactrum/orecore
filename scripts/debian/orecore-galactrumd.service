@@ -1,0 +1,20 @@
+[Unit]
+Description=Galactrum Core for Orecore
+Requires=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/usr/opt/orecore
+ExecStart=/usr/bin/orecore-galactrumd -datadir=/home/orecore/.orecore/data/
+ExecReload=/bin/kill -HUP $MAINPID
+Restart=on-failure
+RestartSec=15
+User=orecore
+ExecStartPre=/bin/mkdir -p /run/orecore
+ExecStartPre=/bin/chown orecore:orecore /run/orecore
+ExecStartPre=/bin/chmod 755 /run/orecore
+PermissionsStartOnly=true
+TimeoutStopSec=300
+
+[Install]
+WantedBy=multi-user.target
