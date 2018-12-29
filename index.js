@@ -1,5 +1,5 @@
 'use strict';
 
-var bitcore = require('bitcore-lib-dash');
+var orecore = require('orecore-lib');
 
-module.exports = bitcore;
+module.exports = orecore;

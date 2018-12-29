@@ -1,16 +1,16 @@
 {
-  "name": "bitcore-dash",
+  "name": "orecore",
   "version": "4.1.3",
-  "description": "A platform to build Dash and blockchain-based applications.",
-  "author": "Dash Core Group <dev@dash.org>",
+  "description": "A platform to build Galactrum and blockchain-based applications.",
+  "author": "BitPay <dev@bitpay.com>",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha test/** --recursive",
     "build-deb": "./scripts/build-deb"
   },
   "bin": {
-    "bitcore": "./bin/bitcore",
-    "bitcored": "./bin/bitcored"
+    "orecore": "./bin/orecore",
+    "orecored": "./bin/orecored"
   },
   "contributors": [
     {
@@ -56,10 +56,14 @@
     {
       "name": "Wei Lu",
       "email": "luwei.here@gmail.com"
+    },
+    {
+      "name": "GAB5TER",
+      "email": "GAB5TER@protonmail.com"
     }
   ],
   "keywords": [
-    "dash",
+    "galactrum",
     "transaction",
     "address",
     "p2p",
@@ -76,16 +80,16 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/dashevo/bitcore-dash.git"
+    "url": "https://github.com/GAB5TER/orecore.git"
   },
   "browser": {
     "request": "browser-request"
   },
   "dependencies": {
-    "bitcore-lib-dash": "^0.13.20",
-    "bitcore-node-dash": "~3.0.4",
-    "insight-api-dash": "^0.4.5",
-    "insight-ui-dash": "^0.4.3"
+    "orecore-lib": "GAB5TER/orecore-lib",
+    "orecore-node": "GAB5TER/orecore-node",
+    "insight-api": "GAB5TER/insight-api",
+    "insight-ui": "GAB5TER/insight-ui"
   },
   "license": "MIT",
   "devDependencies": {

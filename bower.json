@@ -1,20 +1,18 @@
 {
-  "name": "bitcore-dash",
-  "main": "./bitcore.min.js",
+  "name": "orecore",
+  "main": "./orecore.min.js",
   "version": "0.13.5",
-  "homepage": "http://bitcore.io",
+  "homepage": "https://github.com/GAB5TER/orecore",
   "authors": [
     "BitPay, Inc."
   ],
-  "description": "A pure, powerful core for your dash project.",
+  "description": "A pure, powerful core for your Galactrum project.",
   "moduleType": [
     "globals"
   ],
   "keywords": [
-    "dash",
-    "bitcore",
-    "dsh",
-    "satoshi"
+    "galactrum",
+    "orecore"
   ],
   "license": "MIT",
   "ignore": [
