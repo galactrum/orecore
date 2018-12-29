@@ -1,0 +1,7 @@
+#!/usr/bin/env node
+
+var orecore = require('orecore-node/lib/cli/orecore');
+var path = require('path');
+var servicesPath = path.resolve(__dirname, '../');
+var additionalServices = ['insight-api', 'insight-ui'];
+orecore(servicesPath, additionalServices);
